@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "2145745788",
+    "firebase_url": "https://foodnowdelivery-eecc1.firebaseio.com",
+    "project_id": "foodnowdelivery-eecc1",
+    "storage_bucket": "foodnowdelivery-eecc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2145745788:android:1ce3101ea20f15297542f9",
+        "android_client_info": {
+          "package_name": "OrderFood.ute.udn.vn.ltdtdd_nhom1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2145745788-5vfc22upgjh7e0ccnijivkb7k236ntvj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "OrderFood.ute.udn.vn.ltdtdd_nhom1",
+            "certificate_hash": "3e6346992a04461489860316c103a5153793fc05"
+          }
+        },
+        {
+          "client_id": "2145745788-ascq8o1524qh37dmvduetnomhfehi512.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6-5eAuO6llCLizpUnoCNVof_n8NGkkHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2145745788-ascq8o1524qh37dmvduetnomhfehi512.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

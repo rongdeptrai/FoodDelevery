@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="OrderFood.ute.udn.vn.ltdtdd_nhom1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".activity.SignUpActivity"></activity>
+        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".SharePreferences.OnboardingActivity"></activity>
+        <activity android:name=".activity.FoodDetails"></activity>
+        <activity android:name=".activity.InforStoreActivity"></activity>
+
+        <activity android:name=".SharePreferences.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.HomeActivity">
+
+
+        </activity>
+        <activity android:name=".activity.FavouriteActivity" />
+        <activity android:name=".activity.ProfileActivity">
+
+
+        </activity>
+        <activity
+            android:name=".profile.VoucherActivity"
+            android:label="@string/title_activity_voucher"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.NearbyActivity" />
+        <activity android:name=".profile.InfoAppActivity" />
+        <activity android:name=".InformationProfile.EmailChangeActivity" />
+        <activity android:name=".InformationProfile.PhoneNumberChangeActivity" />
+        <activity android:name=".InformationProfile.UsernameChangeActivity" />
+        <activity android:name=".InformationProfile.PassChangeActivity" />
+        <activity android:name=".HelpCenter.Help7Activity" />
+        <activity android:name=".HelpCenter.Help6Activity" />
+        <activity android:name=".HelpCenter.Help5Activity" />
+        <activity android:name=".HelpCenter.Help4Activity" />
+        <activity android:name=".HelpCenter.Help3Activity" />
+        <activity android:name=".HelpCenter.Help2Activity" />
+        <activity android:name=".HelpCenter.Help1Activity" />
+        <activity android:name=".profile.HelpCenterActivity" />
+        <activity android:name=".profile.PayActivity" />
+        <activity android:name=".profile.InformationProfileActivity">
+
+        </activity>
+        <activity android:name=".profile.RegulationsActivity" />
+        <activity android:name=".profile.SettingActivity">
+
+        </activity>
+        <activity android:name=".profile.InviteFriendsActivity" />
+        <activity android:name=".profile.AddressActivity" />
+    </application>
+
+</manifest>

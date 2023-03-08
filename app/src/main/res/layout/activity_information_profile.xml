@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.InformationProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="Lưu"
+            android:textColor="#f96400"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/top">
+
+        <ImageView
+            android:id="@+id/change_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/img_user2"
+            android:layout_alignEnd="@+id/img_user2"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-10dp"
+            android:src="@drawable/add"
+            app:tint="@color/colorBlack" />
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_user2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avt"
+            app:riv_corner_radius="10dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/background"
+        android:layout_margin="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/username1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Tên tài khoản" />
+
+        <TextView
+            android:id="@+id/tv_fullName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/username1"
+            android:text="Le Xuan Vien" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/information"
+            android:layout_toRightOf="@+id/information"
+            android:src="@drawable/nextpage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/username"
+        android:layout_margin="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/password1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Mật khẩu" />
+
+        <TextView
+            android:id="@+id/tv_pass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/password1"
+            android:inputType="textPassword"
+            android:text="Le Xuan Vien"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/information"
+            android:layout_toRightOf="@+id/information"
+            android:src="@drawable/nextpage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_margin="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/phone1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Số điện thoại" />
+
+        <TextView
+            android:id="@+id/tv_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/phone1"
+            android:text="+84353386306" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/information"
+            android:layout_toRightOf="@+id/information"
+            android:src="@drawable/nextpage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/phone"
+        android:layout_margin="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/email1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/tv_email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/email1"
+            android:text="lexuanvien04@gmail.com" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/information"
+            android:layout_toRightOf="@+id/information"
+            android:src="@drawable/nextpage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/BOD"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/email"
+        android:layout_margin="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/BOD1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Ngày sinh" />
+
+        <TextView
+            android:id="@+id/tv_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/BOD1"
+            android:text="03/04/2000" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/information"
+            android:layout_toRightOf="@+id/information"
+            android:src="@drawable/nextpage" />
+    </RelativeLayout>
+
+</RelativeLayout>
